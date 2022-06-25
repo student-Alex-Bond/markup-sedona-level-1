@@ -33,7 +33,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("img/logo.png");
+    background-image: url("../img/logo.png");
     width: 140px;
     height: 71px;
 }
@@ -46,7 +46,7 @@
     position: relative;
     padding: 58px 0 68px 0;
     text-align: center;
-    background-image: url("img/background photo.jpg");
+    background-image: url("../img/background photo.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: -2;
@@ -65,7 +65,7 @@
 .header__promo-wrapper:before {
     content: "";
     position: absolute;
-    background-image: url("img/bottom.png");
+    background-image: url("../img/bottom.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 1200px;
