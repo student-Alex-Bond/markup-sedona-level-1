@@ -2,9 +2,11 @@
     width: 100%;
     box-sizing: border-box;
 }
-.visibility-hidden{
+
+.visibility-hidden {
     display: none;
 }
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -37,10 +39,12 @@
     width: 140px;
     height: 71px;
 }
-.header__promo-img{
-   width: 459px;
+
+.header__promo-img {
+    width: 459px;
     height: 353px;
 }
+
 .header__promo {
     width: 100%;
     position: relative;
@@ -61,20 +65,12 @@
     width: 100%;
     background-color: white;
 }
-
-.header__promo-wrapper:before {
-    content: "";
+.header__promo-img-decoration{
     position: absolute;
-    background-image: url("../img/bottom.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 1200px;
-    height: 57px;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    bottom: -1px;
+    left: -1px;
+    width: 101%;
 }
-
 .header__title {
     font-size: 21px;
     line-height: 26px;
@@ -86,7 +82,85 @@
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-
     font-family: "PT Sans", "Arial", sans-serif;
     color: #333333;
 }
+
+.content__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+.content__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 257px;
+    padding: 40px;
+    text-align: center;
+
+}
+.content__item:nth-child(10),
+.content__item:nth-child(9),
+.content__item:nth-child(8){
+    background-color: #eeeeee;
+}
+
+.content__item:nth-child(1),
+.content__item:nth-child(7) {
+    background-color: #81b3d2;
+    width: 400px;
+}
+
+.content__item:nth-child(2),
+.content__item:nth-child(6) {
+    width: 800px;
+    padding: 0;
+    flex-grow: 1;
+
+}
+
+.content__title {
+    margin: 0;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.content__item-icon {
+    width: 72px;
+    height: 72px;
+}
+
+.content__item:nth-child(1) .content__title,
+.content__item:nth-child(7) .content__title,
+.content__item:nth-child(7) .content__text,
+.content__item:nth-child(1) .content__text {
+    color: white;
+}
+
+.content__text {
+    margin: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+
+.content__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+
