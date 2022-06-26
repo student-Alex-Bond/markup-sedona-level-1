@@ -91,7 +91,35 @@
         </p>
       </li>
     </ul>
+    <section class="search-hotel">
+      <h2 class="search-hotel__title">Заинтересовались?</h2>
+      <p class="search-hotel__subtitle">Укажите предполагаемые даты поездки,<br>
+        и мы ппокажем вам лучшие предложения в седоне</p>
+      <button class="search-hotel__button">Поиск гостиницы в седоне</button>
+      <form class="search-hotel__form">
+        <ul class="search-hotel__form-list">
+          <li class="search-hotel__form-item">
+            <label class="search-hotel__form-label" for="check-in"> Дата заезда:</label>
+            <input class="search-hotel__form-input" type="date" id="check-in" value="2022-04-24">
+          </li>
+          <li class="search-hotel__form-item">
+            <label class="search-hotel__form-label" for="check-out">Дата выезда:</label>
+            <input class="search-hotel__form-input" type="date" id="check-out" value="2022-05-28">
+          </li>
+          <li class="search-hotel__form-item">
+            <label class="search-hotel__form-label" for="adults"> Взрослые:
+              <input type="number" id="adults">
+            </label>
+            <label class="search-hotel__form-label" for="kids">Дети:
+              <input type="number" id="kids">
+            </label>
+          </li>
+        </ul>
+        <button class="search-hotel__form-button" type="submit">НАЙТИ</button>
+      </form>
+    </section>
   </div>
+
 </main>
 <footer></footer>
 </body>

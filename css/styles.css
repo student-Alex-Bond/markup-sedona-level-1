@@ -65,12 +65,14 @@
     width: 100%;
     background-color: white;
 }
-.header__promo-img-decoration{
+
+.header__promo-img-decoration {
     position: absolute;
     bottom: -1px;
     left: -1px;
     width: 101%;
 }
+
 .header__title {
     font-size: 21px;
     line-height: 26px;
@@ -108,9 +110,10 @@
     text-align: center;
 
 }
+
 .content__item:nth-child(10),
 .content__item:nth-child(9),
-.content__item:nth-child(8){
+.content__item:nth-child(8) {
     background-color: #eeeeee;
 }
 
@@ -161,6 +164,81 @@
     height: 100%;
     object-fit: fill;
 
+}
+
+.search-hotel {
+    text-align: center;
+    padding-top: 57px;
+}
+
+.search-hotel__title {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 0 39px 0;
+}
+
+.search-hotel__subtitle {
+    font-family: 'PT Sans', "Arial", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    margin: 0 0 54px 0;
+}
+
+.search-hotel__button {
+    font-family: 'PT Sans Bold', "Arial", sans-serif;
+    text-transform: uppercase;
+    padding: 34px 147px;
+    font-size: 21px;
+    color: white;
+    background-color: #766357;
+    border: none;
+    cursor: pointer;
+}
+
+.search-hotel__form {
+    padding: 60px;
+    width: 584px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.search-hotel__form-button {
+    width: 100%;
+    padding: 19px 0;
+    background-color: #81b3d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-hotel__form-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.search-hotel__form-label{
+    display: inline-block;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-right:15px;
+}
+.search-hotel__form-input{
+    box-sizing: border-box;
+    width: 346px;
+    height: 37px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 12px;
+}
+.search-hotel__form-item{
+    padding-bottom: 31px;
 }
 
 
