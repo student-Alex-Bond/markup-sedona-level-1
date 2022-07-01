@@ -214,19 +214,24 @@
     border: none;
     cursor: pointer;
 }
-.search-hotel__form-list{
+
+.search-hotel__form-list {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.search-hotel__form-label{
+
+.search-hotel__form-label {
     display: inline-block;
     font-family: "PT Sans Bold", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
-    padding-right:15px;
+    padding-right: 15px;
 }
-.search-hotel__form-input{
+
+.search-hotel__form-input {
     box-sizing: border-box;
     width: 346px;
     height: 37px;
@@ -236,9 +241,38 @@
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 12px;
+
 }
-.search-hotel__form-item{
+
+.search-hotel__form-item {
+    position: relative;
     padding-bottom: 31px;
+}
+.search-hotel__form-item:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-hotel__form_input-wrapper{
+    display: flex;
+    height: 40px;
+    align-items: stretch;
+
+}
+.search-hotel__form-input--count {
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.search-hotel__form-item-button{
+    height: 100%;
+    width: 40px;
+    background-color: #f2f2f2;
+    top: 0;
+    border: none;
+    cursor: pointer;
 }
 
 

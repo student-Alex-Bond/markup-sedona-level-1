@@ -107,12 +107,20 @@
             <input class="search-hotel__form-input" type="date" id="check-out" value="2022-05-28">
           </li>
           <li class="search-hotel__form-item">
-            <label class="search-hotel__form-label" for="adults"> Взрослые:
-              <input type="number" id="adults">
-            </label>
-            <label class="search-hotel__form-label" for="kids">Дети:
-              <input type="number" id="kids">
-            </label>
+            <label class="search-hotel__form-label " for="adults"> Взрослые:</label>
+            <div class="search-hotel__form_input-wrapper">
+              <button type="button" class="search-hotel__form-item-button">-</button>
+              <input class=" search-hotel__form-input search-hotel__form-input--count" type="text" id="adults"
+                     value="0">
+              <button type="button" class="search-hotel__form-item-button">+</button>
+            </div>
+
+            <label class="search-hotel__form-label " for="kids">Дети:</label>
+            <div class="search-hotel__form_input-wrapper">
+              <button type="button" class="search-hotel__form-item-button">-</button>
+              <input class="search-hotel__form-input search-hotel__form-input--count" id="kids" value="0">
+              <button type="button" class="search-hotel__form-item-button">+</button>
+            </div>
           </li>
         </ul>
         <button class="search-hotel__form-button" type="submit">НАЙТИ</button>
