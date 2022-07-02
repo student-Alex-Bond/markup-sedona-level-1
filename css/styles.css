@@ -8,9 +8,11 @@
 }
 
 .container {
+    position: relative;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .header__list {
@@ -167,6 +169,7 @@
 }
 
 .search-hotel {
+    position: relative;
     text-align: center;
     padding-top: 57px;
 }
@@ -200,10 +203,15 @@
 }
 
 .search-hotel__form {
+    position: absolute;
+    bottom: -383px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 60px;
-    width: 584px;
+    width: 582px;
     margin: 0 auto;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 .search-hotel__form-button {
@@ -248,17 +256,20 @@
     position: relative;
     padding-bottom: 31px;
 }
-.search-hotel__form-item:nth-child(3){
+
+.search-hotel__form-item:nth-child(3) {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.search-hotel__form_input-wrapper{
+
+.search-hotel__form_input-wrapper {
     display: flex;
     height: 40px;
     align-items: stretch;
 
 }
+
 .search-hotel__form-input--count {
     width: 40px;
     height: 100%;
@@ -266,7 +277,7 @@
     text-align: center;
 }
 
-.search-hotel__form-item-button{
+.search-hotel__form-item-button {
     height: 100%;
     width: 40px;
     background-color: #f2f2f2;
@@ -274,5 +285,87 @@
     border: none;
     cursor: pointer;
 }
+.footer{
+
+}
+.footer__list {
+    box-sizing: border-box;
+    padding: 36px  40px 36px 40px ;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+}
+
+.footer__info__text {
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    margin: 0;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.footer__info__text:first-child {
+    margin-bottom: 7px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.social-icon__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.social-icon__link + .social-icon__link {
+    margin-left: 7px;
+}
+
+.social-icon__link:hover {
+    background-color: #669ec0;
+}
+
+.copyright__link:hover path {
+     fill: #81b3d2;
+}
+
+.twitter {
+    width: 17px;
+    height: 15px;
+}
+
+.facebook {
+    width: 12px;
+    height: 22px;
+}
+
+.youtube {
+    width: 20px;
+    height: 16px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.copyright__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-right: 7px;
+}
+
 
 
